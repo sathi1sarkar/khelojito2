@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.hidden {
+  display: none;
+  transition: all 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+.phone-wrapper {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 384px;
+  height: 100vh;
+  margin: 0px auto;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+  width: 384px;
+  height: 103px;
+  background-color: #000;
+  /* background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+    border-image: linear-gradient(to right, #FFEA28, #FB5A00,#D04E04) 1;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    }
+    .bottom_nav{
+      background-color: #3A3A3A;
+    }
+.logo {
+  background: #000;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  margin: 0px 10px;
+  padding: 0;
+}
+.logo img{
+  width: 119px;
+}
+
+.page-body {
+  overflow: scroll;
+  overflow-x: hidden;
+    height: 660px;
+    padding-top: 6.5rem;
+}
+
+
+
+
+
+
+/* CSS */
+/* inspired from this svgbackgrounds.com/ */
+.button {
+  width: fit-content;
+  display: flex;
+  padding: 0.8em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #880088,
+      #aa2068,
+      #cc3f47,
+      #de6f3d,
+      #f09f33,
+      #de6f3d,
+      #cc3f47,
+      #aa2068,
+      #880088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+.button:hover svg {
+  fill: #fff;
+}
+
+.button svg {
+  width: 23px;
+  fill: #f09f33;
+  transition: 0.3s ease;
+}
+
+
+.user_name_blance {
+  background-color: #facc6b;
+background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+margin: 17px 10px;
+padding: 4px 10px;
+font-size: 16px;
+border-radius: 6px;
+}
+
+.game_name{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  margin: 61px 10px;
+}
+.game_name img {
+  width: 40%;
+  margin-top: -43px;
+}
+.game_name_option {
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 44px;
+}
+
+.game_name_option h3 {
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #333;
+  width: 100%;
+  text-align: left;
+  padding-left: .26667rem;
+}
+@media only screen and (max-width: 480px) {
+  .phone-wrapper {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    width: 100%;
+    margin: 00px auto;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  }
+  nav {
+    width: 100%;
+  }
+}
+/*------------lottery------------------*/
+.user_dep_blance {
+  background: linear-gradient(153.24deg, #c4933f 5.33%, #fae59f 93.42%);
+  padding: 20px 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+ .user_dep_blance p {
+  font-size: 12px;
+  margin-bottom: 0;
+ }
+ .user_dep_blance span {
+  color: #8f5206;
+  font-size: 18px;
+}
+
+.user_dep_blance .dep {
+  background: #8f5206;
+    border-radius: .13333rem;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fae59f;
+    text-align: center;
+    padding: 6px 22px;
+}
+.user_dep_blance .wid {
+  border: 1px solid #8f5206;
+    border-radius: .13333rem;
+    font-weight: 600;
+    font-size: 13px;
+    color: #8f5206;
+    text-align: center;
+    padding: 6px 22px;
+}
+
+.color_choose_game h3 {
+  color: #c69642;
+  font-size: 15px;
+  font-weight: 700;
+}
+.color_choose_game .green {
+  background-color: #2EFF00; background-image :linear-gradient(315deg, #2EFF00 0%, #006176 74%);
+  color: #fff;
+  padding: 7px 26px;
+  border: none;
+  font-size: 14px;
+
+}
+
+.color_choose_game .red {
+  background-color: #FF727B; background-image :linear-gradient(315deg, #FF727B 0%, #A60E70 74%);
+  color: #fff;
+  padding: 7px 26px;
+  border: none;
+  font-size: 14px;
+  margin-left: 9px;
+
+}
+
+.color_choose_game .voilet {
+  background-color: #4062bb;
+background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
+  color: #fff;
+  padding: 7px 26px;
+  border: none;
+  font-size: 14px;
+  margin-left: 9px;
+
+}
+
+.big_small_game h3 {
+  color: #c69642;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.big_small_game .big {
+  background-color: #ffa82e;
+  border-radius: 30px 0px 0px 30px;
+  padding: 10px 50px;
+  font-size: 18px;
+  color: #fff;
+ 
+}
+.big_small_game .small {
+  background-color: #6da7f4;
+  border-radius: 0px 30px 30px 0px;
+  padding: 10px 50px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+}
+
+.header-left {
+  width: 189px;
+}
+/*------------------tab code-------------------------*/
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+  font-size: 13px;
+  border: 2px solid #cb9f4e;
+}
+.panels{
+  background: #25164157;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  color: #8f5206;
+  border-top: 3px solid #cea251;
+  background: linear-gradient(rgb(250, 229, 159), rgb(196, 147, 63));
+  font-weight: 600;
+}
+
+/*------------------tab code-------------------------*/
+
+.game_history .warpper table th {
+  background-color: #ac2265;
+  font-size: 12px;
+  color: #fff;
+}
+.game_history .warpper table tr {
+  border-bottom-color: red;
+}
+.game_history .warpper table td {
+  font-size: 13px;
+    color: #c79845;
+    font-weight: 600;
+}
+
+
+/*-------------modal---------------*/
+.modal.fade .modal-dialog {
+  transition: transform .3s ease-out;
+  transform: translate(0,50px);
+}
+.modal-dialog {
+position: fixed !important;
+bottom: 0 !important;
+left: 0% !important;
+right: 0% !important;
+margin-bottom: 0 !important;
+    
+} 
+
+.modal.show .modal-dialog {
+  transform: none;
+  margin: 0;
+}
+
+.modal-content {
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+border: none;
+background-color: #000;
+}
+.modal-header{
+  background-image: linear-gradient(#404040, #6F6F6F);
+  flex-direction: column;
+}
+.modal-title {
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+}
+.option_game {
+  width: 200px;
+  height: 30px;
+  margin: .21333rem auto 0;
+  background-image: -webkit-linear-gradient(#404040, #545454);
+  background-image: linear-gradient(#404040, #545454);
+  border-radius: .13333rem;
+  text-align: center;
+display: flex;
+justify-content: space-evenly;
+}
+
+.option_game span {
+  color: #ffa82e;
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 6px;
+}
+.modal-footer{
+  justify-content:space-around;
+}
+.amount {
+  background-color: #d9ac4f;
+  color: #8f5206;
+}
+.close{
+  background: #404040;
+  color: #a6a9ae;
+}
+/*-------------modal---------------*/
+.num_name {
+  color: #d9ac4f;
+}
+.num_opt {
+  background-color: #d9ac4f;
+  color: #8f5206;
+  padding: 0px 10px;
+}
+
+/* CSS */
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 7px 26px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #d9ac4f;
+  margin: 0px;
+  width: 30px;
+  height: 29px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px 0;
+  background: #d9ac4f;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  border-radius: 50%;
+}
+
+form #increase {
+
+  border-radius: 50%;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 100px;
+  height: 31px;
+  border-radius: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.my_score{
+  margin-left: 14px;
+}
+.my_score p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/*---------my-account--------*/
+.my_account_details {
+  background: linear-gradient(90deg, #C4933F 0%, #FAE59F 100%);
+  height: 253px;
+  border-radius: 0px 0px 40px 40px;
+}
+/*---------my-account--------*/
+
+.my_account_details img {
+  width: 30%;
+}
+.user_details p{
+  color: #8f5206;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.user_details .uid {
+  background-color: #8f5206;
+  width: 105px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 50px;
+  padding: 3px 10px;
+}
