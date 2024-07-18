@@ -44,7 +44,8 @@ h1 {
 
 .login-container {
     position: relative;
-    width: 22.2rem;
+    /* width: 22.2rem; */
+    margin: 20px;
 }
 .form-container {
     border: 1px solid hsla(0, 0%, 65%, 0.158);

@@ -61,7 +61,7 @@ nav {
 .page-body {
   overflow: scroll;
   overflow-x: hidden;
-    height: 660px;
+    height: 630px;
     padding-top: 6.5rem;
 }
 
@@ -523,14 +523,33 @@ input[type=number]::-webkit-outer-spin-button {
 /*---------my-account--------*/
 .my_account_details {
   background: linear-gradient(90deg, #C4933F 0%, #FAE59F 100%);
-  height: 253px;
+  height: 200px;
   border-radius: 0px 0px 40px 40px;
 }
-/*---------my-account--------*/
+
+
 
 .my_account_details img {
   width: 30%;
 }
+
+.blance_card{
+  background: #4D4D4C;
+    margin: 0px 13px;
+    padding: 15px;
+    margin-top: -44px;
+    border-radius: 20px;
+}
+.blance_card p{
+  color: #A8A5A1;
+  font-size: 13px;
+  font-weight: 400;
+ }
+ .blance_card h3{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+ }
 .user_details p{
   color: #8f5206;
     margin-bottom: 0;
@@ -544,4 +563,97 @@ input[type=number]::-webkit-outer-spin-button {
   color: #fff;
   border-radius: 50px;
   padding: 3px 10px;
+}
+
+.card_history{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 28px 7px;
+}
+.card_history .card {
+  background-color: #333332;
+}
+.card_history .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 3px;
+}
+.card_history .card .card-body img {
+  width: 35px;
+}
+
+.card_history .card .card-body h5{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+ }
+.card_history .card .card-body p{
+  color: #A8A5A1;
+  font-size: 13px;
+  font-weight: 400;
+ }
+.btn_top {
+  margin-top: 10rem;
+}
+ .logout {
+  border: 1px solid #eabb08;
+  border-radius: 50px;
+  padding: 8px 89px;
+  color: blanchedalmond;
+  position: absolute;
+ }
+/*---------my-account end--------*/
+
+/*---------login--------*/
+.log {
+  background-color: #333332;
+  margin-top: -1px;
+  padding: 20px 16px;
+}
+.log h4 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.log p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 19px;
+}
+.login {
+  background: linear-gradient(90deg, #FAE59F 0%, #C4933F 100%);
+  color: var(--color);
+  display: block;
+  padding: 13px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.1s ease-in-out;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+/*---------login end--------*/
+
+.number_choose {
+  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 17px;
+    background: #3a3a3a;
+    padding: 10px;
+    border-radius: 10px;
 }
